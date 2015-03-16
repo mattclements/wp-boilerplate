@@ -1,0 +1,54 @@
+/* ==========================================================================
+	NAVIGATION STYLES
+========================================================================== */
+
+// TODO: Remove this if never used..?
+// %nav {
+// 	list-style:none;
+// 	margin-left:0;
+// 	@extend %cf;
+
+// 	> li{
+
+// 		&,
+// 		> a{
+// 			@extend %inline-block;
+// 		}
+// 	}
+
+// 	@include m(stacked) {
+// 		> li{
+// 		display:list-item;
+
+// 		> a{
+// 			display:block;
+// 			}
+// 		}
+// 	}
+// }
+
+
+/* ==========================================================================
+	 MAIN NAV
+========================================================================== */
+
+.main-menu {
+
+	ul {
+		// @extend %nav;
+	}
+
+	li {}
+
+	a {
+
+		&:hover,&:focus,&:active {
+			color:$color-hover;
+			text-decoration:none;
+		}
+	}
+
+	.current {
+
+	}
+}

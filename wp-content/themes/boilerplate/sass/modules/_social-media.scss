@@ -1,0 +1,27 @@
+/* ==========================================================================
+	SOCIAL ICON STYLES
+========================================================================== */
+.icon-social {
+
+	width: 36px;
+	height: 36px;
+	fill: currentColor;
+	@include remit(margin-right, 10);
+	border-radius:50%;
+
+	&--footer {
+		fill:$white;
+
+		@include hover {
+			background-color:$white;
+		}
+	}
+}
+
+@each $social-media, $color in $social-media {
+.icon-#{$social-media} {
+		@include hover {
+			fill:$color;
+		}
+	}
+}
